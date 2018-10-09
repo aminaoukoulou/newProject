@@ -1,0 +1,19 @@
+
+<div id="background">
+
+  <div id="gallery" *ngFor="let type of info">
+
+<figure class=" {{type.figure}}">
+
+  <img src=" {{type.image}}">
+  
+  <a routerLink="{{type.rooting}}">
+
+  <figcaption> {{type.nom | translate}}</figcaption>
+
+</a>
+</figure>
+
+</div>
+  
+  </div>

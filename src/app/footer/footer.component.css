@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:700,700i');
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body {
+  background: #0F1626;
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+  color: #0F1626;
+}
+
+footer {
+  /* position: fixed; */
+  bottom: 5px;
+  width: 100%;
+  min-height: 10px;
+  background: rgb(191, 146, 140);
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+.menu-rodape {
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu-rodape ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: -2px;
+}
+
+.menu-rodape li {
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: .25em 0;
+  padding: 0 1em;
+  display: flex;
+  text-align: center;
+  border-left: 1px solid #0f1626;
+}
+
+footer nav a {
+  color: #0F1626;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  color: #f04100;
+}
+

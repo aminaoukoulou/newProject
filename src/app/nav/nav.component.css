@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css?family=Flavors|Jua');
+
+
+nav {
+     /* background: #bf928c;  */
+    /*  background-image: url("https://prokcssblog.blob.core.windows.net/edito-fra/2017/12/bois.jpg"); */
+   /* background-repeat: no-repeat;  */
+    top:0;
+    width: 100%;
+    transition:all 0.5s;
+     position: relative;
+   z-index: 1;
+   /* position: fixed; */
+    /* display: flex; */
+  }
+ 
+  .fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px rgba(0,0,0,0.1);
+  }
+nav ul {
+   /*  margin-left: 30%; */
+   margin:0;
+    padding:0;
+    list-style: none;
+    display:flex;
+  }
+
+
+  nav li {
+    flex:1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+nav a {
+    text-decoration: none;
+    padding:20px;
+    display: inline-block;
+    color:rgb(66,66,50);
+    font-weight: bold;
+    transition:all 0.2s;
+    font-family: 'Flavors',cursive;
+    font-family: 'Jua',sans-serif;
+    font-size: 20px;
+  }
+ nav a:hover {
+    color:rgb(191, 146, 140);
+  }
+
+/*   img {
+width: 200px;
+height: 200px;
+  } */
+
+  .logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 13%;
+    height: 0%;
+  }
+
+  #container {
+    width: 330px;
+    margin: 25px auto;
+  }
+
+
+  button {
+        width: 63px;
+        height: 30px;
+        color: #f4e9e9;
+        background-color: #444431;
+        font-family: Open Sans Condensed;
+        text-decoration: none;
+        font-size: 0.8em;
+        border: 2px #ffffff solid;
+        margin: 0px 0 0 2px;
+        transition: all 1.5s;
+        border-radius: 4px;
+  }
+
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  .highlight:hover {
+    background-color: #FFffff;
+    color: #edec89;
+  }
+
+  /* responsiveness...*/
+
+  @media (max-width: 330px) {
+    #container {
+      width: 100%;
+    }
+    button {
+      width: 90%;
+      margin: 5% 0 0 5%;
+    }
+  }
