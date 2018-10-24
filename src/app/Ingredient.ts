@@ -4,6 +4,7 @@ export class ingredient {
     name: String;
     image: String;
     type: String;
+    figure: String;
 }
 
 // tslint:disable-next-line:class-name

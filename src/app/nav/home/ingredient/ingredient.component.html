@@ -1,0 +1,29 @@
+
+<h1>Selectionne ce que tuas chez toi</h1>
+<div id="background">
+
+<div id="gallery" *ngFor="let ingre of ingredient">
+ 
+
+<figure>
+
+
+
+<img src="{{ingre.image}}">
+
+<figcaption> {{ingre.name | translate}}</figcaption>
+
+
+
+</figure>
+
+
+
+</div>
+
+</div> 
+
+<app-liste-ingredients></app-liste-ingredients>
+
+
+<!-- <div id="gallery" *ngFor="let ingre of ingredient" (click)="onSelect(ingr<figure>  e)"></div> -->

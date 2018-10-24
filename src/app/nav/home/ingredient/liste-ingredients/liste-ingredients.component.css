@@ -1,0 +1,51 @@
+.yo {
+     margin-left: 80%;
+     margin-top: -52%;
+     margin-right: 2%;
+     border-left: 2px outset yellow;
+     border-top:2px outset red;
+     border-right:2px outset blue;
+     border-bottom: 2px outset black;
+     /* scroll-behavior: auto;  */
+       
+         max-height: 410px; 
+         /* overflow: auto; */
+     /* border-right: 2px solid red; */
+     margin-bottom: 5%;
+     overflow: auto; 
+}
+
+
+h2 {
+text-align: center;
+
+}
+
+p {
+    margin: 2%;
+    text-align: left;
+      /* border: 3px blue dashed; */
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px green;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: yellow;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+

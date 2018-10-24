@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-images',
   templateUrl: './images.component.html',
@@ -7,11 +8,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImagesComponent implements OnInit {
 
-  images: any[];
-
-    constructor() {
-    }
-  ngOnInit() {
-  }
-
+  constructor() {  }
+  ngOnInit() {}
 }

@@ -1,20 +1,16 @@
 
-
-<nav id="main">
+<nav class="navigation">
   <ul>
-<img src="../assets/img/Logo-square-mealgg.png" alt="" class="logo">
-  <!-- 
-   <li><a routerLink="/about">{{'About' | translate}}</a></li> -->
+
    <li><a routerLink="/home">{{'home' | translate}}</a></li>
    <li><a routerLink="/images">{{'images' | translate}}</a></li>
+<img src="../assets/img/LOGO.png" alt="" class="logo">
+
 <li><a routerLink="/locations">{{'locations' | translate}}</a></li>
 <li><a routerLink="/login">{{'login' | translate}}</a></li>
 <li id="container">
-<button type="button" class="highlight" (click)="useLanguage('fr')">Français</button>
-<button type="button" class="highlight" (click)="useLanguage('en')">English</button>
+<button type="button" class="highlight" (click)="useLanguage('fr')" id="yo"></button>
+<button type="button" class="highlight" (click)="useLanguage('en')" id="yooo"></button>
    </li>
   </ul>
 </nav>
-
-
-

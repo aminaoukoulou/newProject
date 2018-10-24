@@ -1,34 +1,33 @@
-* {
-  box-sizing: border-box;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
 body {
-  margin: 20px auto;
-  max-width: 1073px;
+  margin: 0px;
+  font-family: 'Cedarville Cursive', cursive;
 }
-
 div#background {
   height: 700px;
   width: 100%;
   padding-top: 20px;
 }
-
 div#gallery {
   width: 800px;
   margin: auto;
 }
-
+h1 {
+  margin-top: 3%;
+  font-family: 'Indie Flower',
+    cursive;
+  text-align: center;
+  color: rgb(104, 104, 73);
+}
 img {
   height: 50vw;
-  width: 10vw;
+  width: 9vw;
 }
-
 #background img {
   height: 97px;
   margin: 0px;
 }
-
 #background figure {
   float: left;
   position: relative;
@@ -38,4 +37,252 @@ img {
   padding: 10px;
   margin: 10px;
   box-shadow: 1px 2px 3px black;
+  font-family: 'Indie Flower',cursive;
+  font-weight:bold;
+}
+
+figure.pic1 {
+  -webkit-transform: rotate(-20deg);
+  z-index: 1;
+}
+
+figure.pic2 {
+  -webkit-transform: rotate(15deg);
+  z-index: 2;
+}
+
+figure.pic3 {
+  -webkit-transform: rotate(-25deg);
+  z-index: 1;
+}
+
+figure.pic4 {
+  -webkit-transform: rotate(5deg);
+  z-index: 1;
+}
+
+figure.pic5 {
+  -webkit-transform: rotate(5deg);
+  z-index: 1;
+}
+
+figure.pic6 {
+  -webkit-transform: rotate(-8deg);
+  z-index: 1;
+}
+
+figure.pic7 {
+  -webkit-transform: rotate(2deg);
+  z-index: 1;
+}
+
+figure.pic8 {
+  -webkit-transform: rotate(-13deg);
+  z-index: 1;
+}
+
+figure.pic9 {
+  -webkit-transform: rotate(-7deg);
+  z-index: 1;
+}
+
+figure.pic10 {
+  -webkit-transform: rotate(2deg);
+  z-index: 1;
+}
+
+figure.pic11 {
+  -webkit-transform: rotate(-3deg);
+  z-index: 1;
+}
+
+figure.pic12 {
+  -webkit-transform: rotate(13deg);
+  z-index: 1;
+}
+
+figure.pic13 {
+  -webkit-transform: rotate(-13deg);
+  z-index: 1;
+}
+
+figure.pic14 {
+  -webkit-transform: rotate(9deg);
+  z-index: 1;
+}
+
+figure.pic15 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic16 {
+  -webkit-transform: rotate(25deg);
+  z-index: 1;
+}
+figure.pic17 {
+  -webkit-transform: rotate(-30deg);
+  z-index: 1;
+}
+figure.pic18 {
+  -webkit-transform: rotate(-10deg);
+  z-index: 1;
+}
+figure.pic19 {
+  -webkit-transform: rotate(15deg);
+  z-index: 1;
+}
+figure.pic20 {
+  -webkit-transform: rotate(16deg);
+  z-index: 1;
+}
+figure.pic21 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic22 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic23 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic24 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic25 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic26 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic27 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic28 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic29 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic30 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic31 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic32 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic33 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic34 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic35 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic36 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic37 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic38 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic39 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic40 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic41 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic42 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic43 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic44 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic45 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic46 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic47 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic48 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic49 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic50 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic51 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic52 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic53 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic54 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic55 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+figure.pic56 {
+  -webkit-transform: rotate(20deg);
+  z-index: 1;
+}
+
+
+#background figure:hover {
+  box-shadow: 5px 10px 100px black;
+  -webkit-transform: scale(1.1, 1.1);
+  z-index: 20;
 }

@@ -1,18 +1,18 @@
 
-@import url('https://fonts.googleapis.com/css?family=Flavors|Jua');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
+.navigation {
+background-color:rgb(191, 146, 140);
+}
 
 nav {
-     /* background: #bf928c;  */
-    /*  background-image: url("https://prokcssblog.blob.core.windows.net/edito-fra/2017/12/bois.jpg"); */
-   /* background-repeat: no-repeat;  */
     top:0;
     width: 100%;
     transition:all 0.5s;
      position: relative;
-   z-index: 1;
-   /* position: fixed; */
-    /* display: flex; */
+   /* z-index: 1; */
+       height: 30px;
+       margin-top: 40px;
   }
  
   .fixed-nav nav {
@@ -20,11 +20,9 @@ nav {
     box-shadow: 0 5px rgba(0,0,0,0.1);
   }
 nav ul {
-   /*  margin-left: 30%; */
-   margin:0;
-    padding:0;
     list-style: none;
     display:flex;
+    height: 30px;
   }
 
 
@@ -34,6 +32,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 30px;
   }
 nav a {
     text-decoration: none;
@@ -42,46 +41,52 @@ nav a {
     color:rgb(66,66,50);
     font-weight: bold;
     transition:all 0.2s;
-    font-family: 'Flavors',cursive;
-    font-family: 'Jua',sans-serif;
+    font-family: 'Indie Flower',cursive;
     font-size: 20px;
+    text-align: center;
   }
  nav a:hover {
-    color:rgb(191, 146, 140);
+    color:rgb(237, 236, 137);
   }
 
-/*   img {
-width: 200px;
-height: 200px;
-  } */
-
   .logo {
-    display: inline-block;
-    vertical-align: top;
-    width: 13%;
-    height: 0%;
+   display: inline-block;
+   vertical-align: top;
+   width: 170px;
+   height: 170px;
+   z-index: 2;
+   margin-top: -65px;
   }
 
   #container {
     width: 330px;
-    margin: 25px auto;
+    margin: 0px auto;
   }
 
-
   button {
-        width: 63px;
+        width: 30px;
         height: 30px;
         color: #f4e9e9;
-        background-color: #444431;
+        /* background-color: #444431; */
         font-family: Open Sans Condensed;
         text-decoration: none;
         font-size: 0.8em;
         border: 2px #ffffff solid;
         margin: 0px 0 0 2px;
         transition: all 1.5s;
-        border-radius: 4px;
+        border-radius: 40px;
+       
   }
 
+#yo {
+
+ background-image: url("../../assets/img/france-flag-round-icon-16.png") ;
+background-size: cover;
+}
+#yooo {
+ background-image: url("../../assets/img/united-kingdom-flag-round-xs.png");
+background-size: cover;
+}
 
   button:hover {
     cursor: pointer;

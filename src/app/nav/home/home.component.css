@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
 body {
   margin: 0px;
   font-family: 'Cedarville Cursive', cursive;
+}
+h1{
+  margin-top: 3%;
+  font-family: 'Indie Flower',
+  cursive;
+  text-align: center;
+  color: rgb(104, 104, 73);
 }
 
 div#background {
   height: 700px;
   width: 100%;
-  /* background-image: url(http://garchitecture.ca/php/images/headers/wood.jpg); */
-    padding-top: 20px;
+  padding-top: 20px;
 }
 a {
   text-decoration: none;
@@ -21,7 +29,7 @@ div#gallery {
 
 img {
   height: 50vw;
-  width: 10vw;
+  width: 9vw;
 }
 
 #background img {
@@ -38,6 +46,8 @@ img {
   padding: 10px;
   margin: 10px;
   box-shadow: 1px 2px 3px black;
+  font-family: 'Indie Flower',cursive;
+  font-weight:bold;
 }
 
 figure.pic1 {
