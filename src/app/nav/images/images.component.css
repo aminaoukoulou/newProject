@@ -1,86 +1,70 @@
-p{
-    text-align: center;
-    text-size-adjust: 16px;
-}
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
-.image-box-wrapper {
-  width: 642px;
-  margin: 50px auto;
-}
-
-.image-box {
-  width: 210px;
-  height: 160px;
-  overflow: hidden;
-  background-color: white;
-  border: 1px solid #ccc;
-  float: left;
-  margin: 1px 1px;
-  font: normal normal 12px/1.4 Segoe, "Segoe UI", Arial, Sans-Serif;
-  color: #333;
-}
-
-.image-container,
-.image-details {
-  height: 150px;
-  border: 5px solid white;
-  background-color: #ffc;
-  -webkit-transition: margin-top .4s ease-out .4s;
-  -moz-transition: margin-top .4s ease-out .4s;
-  -ms-transition: margin-top .4s ease-out .4s;
-  -o-transition: margin-top .4s ease-out .4s;
-  transition: margin-top .4s ease-out .4s;
-}
-
-.image-container img {
-  width: 200px;
-  height: 150px;
-  padding: 0 0;
-  margin: 0 0;
-  border: none;
-  outline: none;
-  max-width: none;
-  max-height: none;
-  background-color: black;
-}
-
-.image-details h4,
-.image-details p {
-  margin: 0 0 .2em;
-  padding: 0 0;
-  height: 70px;
-}
-
-.image-details h4 {
-  font-size: 120%;
-  height: auto;
-}
-
-.image-details .details {
-  padding: 10px 12px;
-  overflow: hidden;
-}
-
-.image-details .more {
-  color: white;
-  text-decoration: none;
-  display: block;
+h1 {
+  margin-top: 4%;
+  font-family: 'Indie Flower', cursive;
   text-align: center;
-  font-weight: bold;
-  background-color: #f9a;
-  height: 26px;
-  line-height: 26px;
-  margin: 10px 0 0;
+  color: rgb(104, 104, 73);
 }
 
-.image-box:hover {
-  border-color: #bbb
+body {
+  height: 100%;
 }
 
-.image-box:hover .image-container {
-  margin-top: -160px
+.container {
+  max-width: 1125px;
+  margin: 0 auto;
 }
 
-.image-details .more:hover {
-  background-color: black
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  width: 330px;
+  height: 265px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.gallery-item img {
+  position: absolute;
+}
+
+.text-wrapper {
+  position: relative;
+  width: 330px;
+  height: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+}
+
+.text-wrapper:hover {
+  transition: all 0.8s ease;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.name {
+  font-size: 1.5em;
+}
+
+
+/* Because there is no hover on a touch devide, we need to move the text to the bottom of the image and display it by default */
+
+@media only screen and (max-width: 1024px) {
+  .text-wrapper {
+    opacity: 1;
+    justify-content: flex-end;
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  .title {
+    margin-bottom: 1em;
+  }
 }

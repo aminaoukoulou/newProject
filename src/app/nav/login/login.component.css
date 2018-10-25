@@ -1,4 +1,12 @@
-h1{
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body {
+  height: 100%;
+}
+
+h1 {
+  margin-top: 4%;
+  font-family: 'Indie Flower', cursive;
   text-align: center;
-  margin: 15%;
+  color: rgb(104, 104, 73);
 }

@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
 body {
-  margin: 0px;
-  font-family: 'Cedarville Cursive', cursive;
+  height: 100%;
 }
 h1{
-  margin-top: 3%;
+  margin-top: 4%;
   font-family: 'Indie Flower',
   cursive;
   text-align: center;

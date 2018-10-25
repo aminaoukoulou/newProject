@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
 body {
-  margin: 0px;
-  font-family: 'Cedarville Cursive', cursive;
+  height: 100%;
 }
 div#background {
   height: 700px;
@@ -14,26 +13,26 @@ div#gallery {
   margin: auto;
 }
 h1 {
-  margin-top: 3%;
-  font-family: 'Indie Flower',
-    cursive;
+  margin-top: 4%;
+  font-family: 'Indie Flower',cursive;
   text-align: center;
   color: rgb(104, 104, 73);
 }
 img {
-  height: 50vw;
-  width: 9vw;
+  height: 12vw;
+  width: 15vw;
 }
 #background img {
   height: 97px;
   margin: 0px;
+  width: 11vw;
 }
 #background figure {
   float: left;
   position: relative;
   background-color: white;
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
   padding: 10px;
   margin: 10px;
   box-shadow: 1px 2px 3px black;
