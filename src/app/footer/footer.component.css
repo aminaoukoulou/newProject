@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Vollkorn:700,700i');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
 
-  .footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color:rgb(191, 146, 140);
-    color:rgb(66, 66, 50);
-    text-align: center;
-    font-family: 'Indie Flower', cursive;
-    margin-top: 17%;
-    height: 2vw;
-  }
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(191, 146, 140);
+  color: rgb(66, 66, 50);
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  margin-top: 17%;
+  height: 2vw;
+  font-weight: bold;
+}

@@ -14,24 +14,24 @@ import { IngredientsService } from 'src/app/Services/ingredients.service';
 export class HomeComponent implements OnInit {
 
 
-// tslint:disable-next-line:member-ordering
-selectedIngredient: ingredient;
-info: ingredientsType[] ;
+  // tslint:disable-next-line:member-ordering
+  selectedIngredient: ingredient;
+  info: ingredientsType[];
 
   onSelect(Ingredient: ingredient): void {
     this.selectedIngredient = Ingredient;
   }
 
   constructor(private ingredientService: IngredientsService) {
-// constructor(private route: ActivatedRoute) {
-  // this.route.params.subscribe( params => console.log(params));
-}
+    // constructor(private route: ActivatedRoute) {
+    // this.route.params.subscribe( params => console.log(params));
+  }
 
   getInfo() {
     this.ingredientService.getInfo().subscribe((info: ingredientsType[]) => this.info = info);
   }
   ngOnInit() {
     this.getInfo();
-   }
+  }
 
 }

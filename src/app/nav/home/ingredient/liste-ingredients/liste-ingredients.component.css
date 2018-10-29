@@ -3,30 +3,31 @@
 body {
   height: 100%;
 }
+
 .yo {
-     margin-left: 80%;
-     margin-top: -52%;
-     margin-right: 2%;
-     border-left: 2px outset rgb(191, 146, 140);
-     border-top:2px outset rgb(191, 146, 140);
-     border-right:2px outset rgb(191, 146, 140);
-     border-bottom: 2px outset rgb(191, 146, 140);
-      max-height: 410px; 
-     overflow: auto; 
+  margin-left: 80%;
+  margin-top: -52%;
+  margin-right: 2%;
+  border-left: 2px outset rgb(191, 146, 140);
+  border-top: 2px outset rgb(191, 146, 140);
+  border-right: 2px outset rgb(191, 146, 140);
+  border-bottom: 2px outset rgb(191, 146, 140);
+  max-height: 410px;
+  overflow: auto;
 }
 
 
 h2 {
-text-align: center;
-font-family: 'Cedarville Cursive',cursive;
+  text-align: center;
+  font-family: 'Cedarville Cursive', cursive;
 
 }
 
 p {
-    margin: 2%;
-    text-align: left;
-    font-family: 'Cedarville Cursive',cursive;
-      /* border: 3px blue dashed; */
+  margin: 2%;
+  text-align: left;
+  font-family: 'Cedarville Cursive', cursive;
+  /* border: 3px blue dashed; */
 }
 
 ::-webkit-scrollbar {
@@ -41,13 +42,11 @@ p {
 
 
 ::-webkit-scrollbar-thumb {
-  background:rgb(237, 236, 137);
+  background: rgb(237, 236, 137);
   border-radius: 10px;
 }
 
 
 ::-webkit-scrollbar-thumb:hover {
-  background:rgb(66, 66, 50);
+  background: rgb(66, 66, 50);
 }
-
-
