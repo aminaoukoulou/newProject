@@ -71,5 +71,12 @@
       "Beurre": "Butter",
       "Huile d olive": "olive oil",
       "Huile vegetale": "vegetable oil",
-      "Huile de coco": "coconut oil"
+      "Huile de coco": "coconut oil",
+      "Choisie ton type d'ingredients":"choose your type of ingredients",
+      "Selectionne ce que tu as chez toi ":"Select what you have at home",
+      "login":"Login",
+      "username": "Username",
+      "password": "Password",
+      "Sign in":"Connection",
+      "Enregistrement":"Register"
   }
