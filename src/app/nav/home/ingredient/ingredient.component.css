@@ -334,7 +334,7 @@ figure.pic56 {
 }
 
   button.retour {
-  background-color: #4CAF50;
+  background-color: rgb(76, 78, 175);
   /* Green */
    border: none;
   color: white;
@@ -350,15 +350,19 @@ figure.pic56 {
   cursor: pointer;
 }
 
-
+button.retour:hover {
+background-color: #e7e7e7;
+}
 
 
   button.button {
   background-color: white;
   color: black;
   border: 2px solid #e7e7e7;
+  cursor: pointer;
 }
 
  button.button:hover {
   background-color: #e7e7e7; 
+  
 }  
