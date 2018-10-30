@@ -5,13 +5,13 @@ import { IngredientsService } from 'src/app/Services/ingredients.service';
 
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-categories',
+  templateUrl: './categories.component.html',
+  styleUrls: ['./categories.component.css']
 })
 
 
-export class HomeComponent implements OnInit {
+export class CategoriesComponent implements OnInit {
 
 
   // tslint:disable-next-line:member-ordering

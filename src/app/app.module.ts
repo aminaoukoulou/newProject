@@ -4,12 +4,11 @@ import {NgModule } from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {NavComponent} from './nav/nav.component';
-import {HeaderComponent} from './header/header.component';
-import { RouterModule, Routes } from '@angular/router' ;
-import { HomeComponent } from './nav/home/home.component';
-import { ImagesComponent } from './nav/images/images.component';
+import {LoginComponent} from './login/login.component';
+import { RouterModule } from '@angular/router' ;
+import { CategoriesComponent } from './nav/categories/categories.component';
+import { RecettesComponent } from './nav/recettes/recettes.component';
 import { LocationsComponent } from './nav/locations/locations.component';
-import { LoginComponent } from './nav/login/login.component';
 
 import { routes } from './app-routing.module';
 import {TabViewModule} from 'primeng/primeng';
@@ -23,9 +22,9 @@ import {ButtonModule} from 'primeng/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastModule } from 'primeng/toast';
 import { IngredientsService } from './Services/ingredients.service';
-import { IngredientComponent } from './nav/home/ingredient/ingredient.component';
+import { IngredientComponent } from './nav/categories/ingredient/ingredient.component';
 import { FooterComponent } from './footer/footer.component';
-import { ListeIngredientsComponent } from './nav/home/ingredient/liste-ingredients/liste-ingredients.component';
+import { ListeIngredientsComponent } from './nav/categories/ingredient/liste-ingredients/liste-ingredients.component';
 
 
 
@@ -34,11 +33,10 @@ import { ListeIngredientsComponent } from './nav/home/ingredient/liste-ingredien
   declarations: [
     AppComponent,
     NavComponent,
-    HeaderComponent,
-    HomeComponent,
-    ImagesComponent,
-    LocationsComponent,
     LoginComponent,
+    CategoriesComponent,
+    RecettesComponent,
+    LocationsComponent,
     IngredientComponent,
     FooterComponent,
     ListeIngredientsComponent
