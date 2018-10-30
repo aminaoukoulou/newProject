@@ -12,6 +12,7 @@ h1 {
   color: rgb(104, 104, 73);
 }
 
+
   div#background {
   height: 20px;
   width: 100%;
@@ -29,8 +30,8 @@ div#gallery {
 }
 
 img {
-  height: 50vw;
-  width: 9vw;
+     height: 103px;
+     width: 149px;
 }
 
 #background img {
