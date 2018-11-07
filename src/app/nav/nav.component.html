@@ -1,16 +1,27 @@
 
 
-<nav class="navigation">
-  <ul>
 
-   <li><a routerLink="/categories">{{'categories' | translate}}</a></li>
-   <li><a routerLink="/recettes">{{'recettes' | translate}}</a></li>
-<img src="../assets/img/LOGO.png" alt="" class="logo">
-
- <li><a routerLink="/locations">{{'locations' | translate}}</a></li> 
+<img src="../assets/img/Logo-square-mealgg.png" alt="" class="logo">
 <li id="container">
-<button type="button" class="highlight" (click)="useLanguage('fr')" id="yo"></button>
-<button type="button" class="highlight" (click)="useLanguage('en')" id="yooo"></button>
-   </li>
-  </ul>
+  <button type="button" class="highlight" (click)="useLanguage('fr')" id="yo"></button>
+  <button type="button" class="highlight" (click)="useLanguage('en')" id="yooo"></button>
+</li>
+<nav>
+
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+<a routerLink="/categories">
+<li>{{'categories' | translate}}</li>
+      </a>
+<a routerLink="/recettes">
+<li>{{'recettes' | translate}}</li>
+      </a>
+<!-- <li><a routerLink="/locations">{{'locations' | translate}}</a></li> -->
+
+    </ul>
+  </div>
 </nav>
