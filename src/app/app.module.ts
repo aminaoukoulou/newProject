@@ -8,7 +8,7 @@ import {LoginComponent} from './login/login.component';
 import { RouterModule } from '@angular/router' ;
 import { CategoriesComponent } from './nav/categories/categories.component';
 import { RecettesComponent } from './nav/recettes/recettes.component';
-import { LocationsComponent } from './nav/locations/locations.component';
+import { DetailsRecipesComponent } from './nav/detailsrecipes/details-recipes.component';
 
 import { routes } from './app-routing.module';
 import {TabViewModule} from 'primeng/primeng';
@@ -36,7 +36,7 @@ import { ListeIngredientsComponent } from './nav/categories/ingredient/liste-ing
     LoginComponent,
     CategoriesComponent,
     RecettesComponent,
-    LocationsComponent,
+    DetailsRecipesComponent,
     IngredientComponent,
     FooterComponent,
     ListeIngredientsComponent

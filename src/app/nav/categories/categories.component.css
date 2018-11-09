@@ -12,7 +12,6 @@ h1 {
   color: rgb(104, 104, 73);
 }
 
-
   div#background {
   height: 20px;
   width: 100%;
@@ -25,7 +24,7 @@ a {
 }
 
 div#gallery {
-  width: 800px;
+  width: 83%;
   margin: auto;
 }
 
@@ -35,8 +34,9 @@ img {
 }
 
 #background img {
-  height: 97px;
-  margin: 0px;
+      height: 124px;
+      width: 192px;
+      margin: 0px;
 }
 
 #background figure {

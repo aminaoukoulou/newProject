@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
+
+
+
 body {
   height: 100%;
 }
 
-.yo {
+
+.liste {
   margin-left: 80%;
-  margin-top: -52%;
+  margin-top: 2%;
   margin-right: 2%;
   border-left: 2px outset rgb(191, 146, 140);
   border-top: 2px outset rgb(191, 146, 140);

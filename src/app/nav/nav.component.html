@@ -8,19 +8,16 @@
 </li>
 <nav>
 
-  <div id="menuToggle">
+<div id="menuToggle" onclick="myFunction()">
     <input type="checkbox" />
     <span></span>
     <span></span>
     <span></span>
     <ul id="menu">
-<a routerLink="/categories">
-<li>{{'categories' | translate}}</li>
-      </a>
-<a routerLink="/recettes">
-<li>{{'recettes' | translate}}</li>
-      </a>
-<!-- <li><a routerLink="/locations">{{'locations' | translate}}</a></li> -->
+<a routerLink="/categories"><li>{{'categories' | translate}}</li></a>
+<a routerLink="/recettes"><li>{{'recettes' | translate}}</li></a>
+
+<a routerLink="/detailsrecipes"><li> {{'locations' | translate}}</li></a>
 
     </ul>
   </div>

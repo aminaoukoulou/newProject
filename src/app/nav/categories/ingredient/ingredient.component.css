@@ -5,14 +5,14 @@ body {
 }
 
 div#background {
-  height: 700px;
+/*   height: 700px;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 2%; */
 }
 
 div#gallery {
-  width: 800px;
-  margin: auto;
+  width: 80%;
+  margin: auto; 
 }
 
 h1 {
@@ -23,14 +23,14 @@ h1 {
 }
 
 img {
-  height: 12vw;
-  width: 15vw;
+  height: 8vw;
+  width: 9vw;
 }
 
 #background img {
-     height: 90px;
+     height: 9wh;
      margin: 0px;
-     width: 9vw;
+     width: 9wh;
 }
 
 #background figure {
@@ -147,57 +147,57 @@ figure.pic20 {
 }
 
 figure.pic21 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-10deg);
   z-index: 1;
 }
 
 figure.pic22 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(13deg);
   z-index: 1;
 }
 
 figure.pic23 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-9deg);
   z-index: 1;
 }
 
 figure.pic24 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(18deg);
   z-index: 1;
 }
 
 figure.pic25 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-15deg);
   z-index: 1;
 }
 
 figure.pic26 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(6deg);
   z-index: 1;
 }
 
 figure.pic27 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-10deg);
   z-index: 1;
 }
 
 figure.pic28 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(12deg);
   z-index: 1;
 }
 
 figure.pic29 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-15deg);
   z-index: 1;
 }
 
 figure.pic30 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(17deg);
   z-index: 1;
 }
 
 figure.pic31 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-20deg);
   z-index: 1;
 }
 
@@ -207,27 +207,27 @@ figure.pic32 {
 }
 
 figure.pic33 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-24deg);
   z-index: 1;
 }
 
 figure.pic34 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(22deg);
   z-index: 1;
 }
 
 figure.pic35 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-18deg);
   z-index: 1;
 }
 
 figure.pic36 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(18deg);
   z-index: 1;
 }
 
 figure.pic37 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-20deg);
   z-index: 1;
 }
 
@@ -237,92 +237,92 @@ figure.pic38 {
 }
 
 figure.pic39 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-10deg);
   z-index: 1;
 }
 
 figure.pic40 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(10deg);
   z-index: 1;
 }
 
 figure.pic41 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-18deg);
   z-index: 1;
 }
 
 figure.pic42 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(18deg);
   z-index: 1;
 }
 
 figure.pic43 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-19deg);
   z-index: 1;
 }
 
 figure.pic44 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(19deg);
   z-index: 1;
 }
 
 figure.pic45 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-14deg);
   z-index: 1;
 }
 
 figure.pic46 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(14deg);
   z-index: 1;
 }
 
 figure.pic47 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-28deg);
   z-index: 1;
 }
 
 figure.pic48 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(29deg);
   z-index: 1;
 }
 
 figure.pic49 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-15deg);
   z-index: 1;
 }
 
 figure.pic50 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(15deg);
   z-index: 1;
 }
 
 figure.pic51 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-25deg);
   z-index: 1;
 }
 
 figure.pic52 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(25deg);
   z-index: 1;
 }
 
 figure.pic53 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-29deg);
   z-index: 1;
 }
 
 figure.pic54 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(29deg);
   z-index: 1;
 }
 
 figure.pic55 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(-30deg);
   z-index: 1;
 }
 
 figure.pic56 {
-  -webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(30deg);
   z-index: 1;
 }
 
@@ -335,7 +335,6 @@ figure.pic56 {
 
   button.retour {
   background-color: rgb(191, 146, 140);
-  /* Green */
    border: none;
   color: white;
   padding: 16px 32px;
@@ -348,6 +347,7 @@ figure.pic56 {
   /* Safari */
    transition-duration: 0.4s;
   cursor: pointer;
+  border-radius: 50% 60% / 10% 100%;
 }
 
 button.retour:hover {
