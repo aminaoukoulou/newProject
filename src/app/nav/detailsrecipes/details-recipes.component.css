@@ -2,8 +2,20 @@
 body {
   height: 100%;
 }
-div{
-    text-align: center;
+img{
+  width: 25%;
+
+}
+.global{
     padding: 10%;
-    font-family: 'Indie Flower',cursive;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.typo {
+  text-align: center;
+  font-family: 'Indie Flower',
+  cursive;
+  margin-top: 8%;
 }
