@@ -7,7 +7,6 @@
 }
 
 body {
-  background: url(https://f.cl.ly/items/2u1z0Y0I1U061j410F08/debut_light.png);
   height: 100%
 }
 
@@ -20,8 +19,10 @@ section {
 h1 {
   font: normal 1.8em/1.3 Capita, Georgia, serif;
   margin: 0 0 1.2em;
-  color: #8ab300;
+  color: rgb(66, 66, 50);
   text-align: center;
+  font-family: 'Indie Flower',cursive;
+  font-weight: bold;
 }
 
 .photo-stack-grid {
@@ -65,6 +66,7 @@ span {
   white-space: nowrap;
   overflow: hidden;
   display: block;
+  font-family: 'Indie Flower',cursive;
 }
 
 .photo-stack {

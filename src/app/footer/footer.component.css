@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
+body{
+height: 50%;
+}
 
 .footer {
   left: 0;
