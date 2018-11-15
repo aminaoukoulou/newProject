@@ -9,6 +9,10 @@ import { RouterModule } from '@angular/router' ;
 import { CategoriesComponent } from './nav/categories/categories.component';
 import { RecettesComponent } from './nav/recettes/recettes.component';
 import { DetailsRecipesComponent } from './nav/detailsrecipes/details-recipes.component';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { environment } from '../environments/environment';
 
 import { routes } from './app-routing.module';
 import {TabViewModule} from 'primeng/primeng';
@@ -62,7 +66,10 @@ import { ListeIngredientsComponent } from './nav/categories/ingredient/liste-ing
             deps: [HttpClient]
         }
     }),
-    DropdownModule
+    DropdownModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule
       ],
   providers: [IngredientsService],
   bootstrap: [AppComponent]

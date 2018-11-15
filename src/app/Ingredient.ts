@@ -14,3 +14,8 @@ export class ingredientsType {
     figure: String;
     image: String;
 }
+export class Recipes {
+    name: String;
+    image: String;
+    text: String;
+}

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ingredientsType } from '../Ingredient';
+import { ingredientsType, Recipes } from '../Ingredient';
 import 'rxjs/add/observable/of';
 
 
@@ -74,7 +74,7 @@ export class IngredientsService {
      { nom: 'legumes', rooting: '/ingredient/Legumes', figure: 'pic2', image: '../../../assets/img/legumes.jpg'},
      { nom: 'cereales', rooting: '/ingredient/Cereales', figure: 'pic3', image: '../../../assets/img/cereales.jpg' },
      { nom: 'plantes', rooting: '/ingredient/Plantes', figure: 'pic4', image: '../../../assets/img/herbes-aromatiques.jpg'},
-     { nom: 'autres', rooting: '/ingredient/Autres', figure: 'pic5', image: '../../../assets/img/Logo-square-mealgg.png'},
+     { nom: 'autres', rooting: '/ingredient/Autres', figure: 'pic5', image: '../../../assets/img/pas-image.jpg'},
      { nom: 'poissons', rooting: '/ingredient/Poissons', figure: 'pic6', image: '../../../assets/img/poissonssssss.jpg'},
      { nom: 'gras', rooting: '/ingredient/Gras', figure: 'pic7', image: '../../../assets/img/gras.jpg'},
      { nom: 'viande', rooting: '/ingredient/Viande', figure: 'pic8', image: '../../../assets/img/vianddde.jpg'},
@@ -84,6 +84,16 @@ export class IngredientsService {
      { nom: 'volaille', rooting: '/ingredient/Volaille', figure: 'pic13', image: '../../../assets/img/volailes.jpg'},
      { nom: 'boissons', rooting: '/ingredient/Boissons', figure: 'pic14', image: '../../../assets/img/boissssssons.jpg' },
 
+  ];
+  detailsR: Recipes[] = [
+    { name: 'moussaka', image: '../../../assets/img/moussaka.jpg', text: '?VKD?LGORJGOERJGORJOIjodjof'},
+    // tslint:disable-next-line:max-line-length
+    { name: 'Tarte aux citrons meringué', image: '../../../assets/img/tarte-au-citron.jpg', text: '?VKD?LGORJGOERJGORJOIjodjof' },
+    { name: 'Risotto aux asperges', image: '../../../assets/img/risotto-asperges.jpg', text: '?VKD?LGORJGOERJGORJOIjodjof' },
+    { name: 'Salde tomate mozzarell', image: '../../../assets/img/salade-tomate-mozzarella.jpeg', text: '?VKD?LGORJGOERJGORJOIjodjof' },
+    { name: 'Tartiflette', image: '../../../assets/img/tartiflette.jpg', text: '?VKD?LGORJGOERJGORJOIjodjof' },
+    // tslint:disable-next-line:max-line-length
+    { name: 'Velouté aux pitimaton et patates douce', image: '../../../assets/img/velouter-potimaron-patate-douce.jpg', text: '?VKD?LGORJGOERJGORJOIjodjof' },
   ];
 
 
@@ -97,6 +107,9 @@ export class IngredientsService {
   }
   getInfo(): Observable<ingredientsType[]> {
     return Observable.of(this.info);
+  }
+  getDetailsR(): Observable<Recipes[]> {
+    return Observable.of(this.detailsR);
   }
 }
 
