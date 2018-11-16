@@ -1,21 +1,21 @@
 <app-nav></app-nav>
 
 
-<section>
+<section >
   <h1>Recettes</h1>
 <input type="text" id="myInput" placeholder="Search for recips.." title="Type in a name">
 
 
-<div class="plop">
-<ul class="photo-stack-grid"  *ngFor="let r of detailsR">
-     
-      <a href="#d">
+<div class="plop" >
+<ul class="photo-stack-grid" *ngFor="let r of detailsR" routerLink="/detailsrecipes">
+    
 <figure class="photo-stack"> 
 
- <img src="{{r.image}}" alt="picture" routerLink="/detailsrecipes" />
+ <img src="{{r.image}}" alt="picture" />
+<!-- <img src="{{r.image}}" alt="picture" routerLink="{{r.rooting}}" /> -->
         </figure>
 <span>{{r.name}}</span>
-      </a>
+     
     
 
 
@@ -23,6 +23,10 @@
 
 </div>
 </section>
+
+
+
+
 
 
 <!-- <script>

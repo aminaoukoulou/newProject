@@ -18,4 +18,5 @@ export class Recipes {
     name: String;
     image: String;
     text: String;
+    rooting: String;
 }

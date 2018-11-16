@@ -86,14 +86,17 @@ export class IngredientsService {
 
   ];
   detailsR: Recipes[] = [
-    { name: 'moussaka', image: '../../../assets/img/moussaka.jpg', text: '?VKD?LGORJGOERJGORJOIjodjof'},
+    { name: 'moussaka', image: '../../../assets/img/moussaka.jpg', text: '111?VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/moussaka'},
     // tslint:disable-next-line:max-line-length
-    { name: 'Tarte aux citrons meringué', image: '../../../assets/img/tarte-au-citron.jpg', text: '?VKD?LGORJGOERJGORJOIjodjof' },
-    { name: 'Risotto aux asperges', image: '../../../assets/img/risotto-asperges.jpg', text: '?VKD?LGORJGOERJGORJOIjodjof' },
-    { name: 'Salde tomate mozzarell', image: '../../../assets/img/salade-tomate-mozzarella.jpeg', text: '?VKD?LGORJGOERJGORJOIjodjof' },
-    { name: 'Tartiflette', image: '../../../assets/img/tartiflette.jpg', text: '?VKD?LGORJGOERJGORJOIjodjof' },
+    { name: 'Tarte aux citrons meringué', image: '../../../assets/img/tarte-au-citron.jpg', text: '?2222VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Tarte aux citrons meringué' },
     // tslint:disable-next-line:max-line-length
-    { name: 'Velouté aux pitimaton et patates douce', image: '../../../assets/img/velouter-potimaron-patate-douce.jpg', text: '?VKD?LGORJGOERJGORJOIjodjof' },
+    { name: 'Risotto aux asperges', image: '../../../assets/img/risotto-asperges.jpg', text: '3333VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Risotto aux asperges' },
+    // tslint:disable-next-line:max-line-length
+    { name: 'Salde tomate mozzarell', image: '../../../assets/img/salade-tomate-mozzarella.jpeg', text: '444?VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Salde tomate mozzarell' },
+    // tslint:disable-next-line:max-line-length
+    { name: 'Tartiflette', image: '../../../assets/img/tartiflette.jpg', text: '555?VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Tartiflette' },
+    // tslint:disable-next-line:max-line-length
+    { name: 'Velouté aux pitimaton et patates douce', image: '../../../assets/img/velouter-potimaron-patate-douce.jpg', text: '666?VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Velouté aux pitimaton et patates douce' },
   ];
 
 
@@ -111,5 +114,8 @@ export class IngredientsService {
   getDetailsR(): Observable<Recipes[]> {
     return Observable.of(this.detailsR);
   }
+ /*  getRecette(type: String) {
+    return this.Recipes.filter(Recipes => recipes.rooting === rooting);
+  } */
 }
 
