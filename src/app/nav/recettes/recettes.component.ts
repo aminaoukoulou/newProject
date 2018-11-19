@@ -11,7 +11,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class RecettesComponent implements OnInit {
   detailsR: Recipes[];
   Recipes: string;
-  public searchText: string;
 
   constructor(private ingredientService: IngredientsService, private activatedRoute: ActivatedRoute, private router: Router) {  }
 
@@ -22,9 +21,10 @@ export class RecettesComponent implements OnInit {
   ngOnInit() {
    this.getDetailsR();
   }
- SelectRecipe() {
+
+/*  SelectRecipe() {
 const name = this.router.snapshot.paramMap.get('name');
-   this.router.navigate(['/detailsrecipes/', name] );
- }
+   this.router.navigate(['/detailsrecipes/toto', name] );
+ } */
 }
 

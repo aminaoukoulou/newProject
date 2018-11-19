@@ -91,11 +91,11 @@ export class IngredientsService {
     // tslint:disable-next-line:max-line-length
     { name: 'Tarte aux citrons meringué', image: '../../../assets/img/tarte-au-citron.jpg', text: '?2222VKD?LGORJGOERJGORJOIjodjof', rooting: '/detailsrecipes/Tarte' },
     // tslint:disable-next-line:max-line-length
-    { name: 'Risotto aux asperges', image: '../../../assets/img/risotto-asperges.jpg', text: '3333VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Risotto' },
+    { name: 'Risotto aux asperges', image: '../../../assets/img/risotto-asperges.jpg', text: '3333VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/detailsrecipes/Risotto' },
     // tslint:disable-next-line:max-line-length
     { name: 'Salde tomate mozzarell', image: '../../../assets/img/salade-tomate-mozzarella.jpeg', text: '444?VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Salde' },
     // tslint:disable-next-line:max-line-length
-    { name: 'Tartiflette', image: '../../../assets/img/tartiflette.jpg', text: '555?VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Tartiflette' },
+    { name: 'Tartiflette', image: '../../../assets/img/tartiflette.jpg', text: '555?VKD?LGORJGOERJGORJOIjodjof', rooting: '/detailsrecipes/' },
     // tslint:disable-next-line:max-line-length
     { name: 'Velouté aux pitimaton et patates douce', image: '../../../assets/img/velouter-potimaron-patate-douce.jpg', text: '666?VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Veloute' },
   ];
@@ -114,9 +114,10 @@ export class IngredientsService {
   getDetailsR(): Observable<Recipes[]> {
     return Observable.of(this.detailsR);
   }
+
   /* getRecette(name: String) {
     return this.detailsR.filter(recette => recette.name === name);
-  } */
+   } */
 
 }
 
