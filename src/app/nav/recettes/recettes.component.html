@@ -1,50 +1,27 @@
 <app-nav></app-nav>
 
+<section>
 
-<section >
-  <h1>Recettes</h1>
-<input type="text" id="myInput" placeholder="Search for recips.." title="Type in a name">
+<input [(ngModel)]="searchText" placeholder="Search.." class="advancedSearchTextbox" id="myInput">
+<div class="plop">
+<ul class="photo-stack-grid">
 
+<table *ngFor="let r of detailsR | grdFilter: {name: searchText, text:searchText}" routerLink="{{r.rooting}}">
+  <tr>
+<!-- <td align="center" valign="center">{{i +1}}</td> -->
 
-<div class="plop" >
-<ul class="photo-stack-grid" *ngFor="let r of detailsR" routerLink="/detailsrecipes">
-    
-<figure class="photo-stack"> 
+<figure class="photo-stack">
 
- <img src="{{r.image}}" alt="picture" />
-<!-- <img src="{{r.image}}" alt="picture" routerLink="{{r.rooting}}" /> -->
-        </figure>
-<span>{{r.name}}</span>
-     
-    
+<td><img src="{{r.image}}" alt="picture" (click)="SelectRecipe()"></td>
+</figure>
 
+<span><td>{{r.name}}</td></span>
 
-  </ul>
-
+  
+  </tr>
+</table>
+</ul>
 </div>
 </section>
-
-
-
-
-
-
-<!-- <script>
-  function myFunction() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-      a = li[i].getElementsByTagName("a")[0];
-      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        li[i].style.display = "";
-      } else {
-        li[i].style.display = "none";
-      }
-    }
-  }
-</script> -->
 
 <app-footer></app-footer>

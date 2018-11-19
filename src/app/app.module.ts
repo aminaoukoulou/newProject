@@ -29,6 +29,7 @@ import { IngredientsService } from './Services/ingredients.service';
 import { IngredientComponent } from './nav/categories/ingredient/ingredient.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListeIngredientsComponent } from './nav/categories/ingredient/liste-ingredients/liste-ingredients.component';
+import { GrdFilterPipe } from './grd-filter.pipe';
 
 
 
@@ -43,7 +44,8 @@ import { ListeIngredientsComponent } from './nav/categories/ingredient/liste-ing
     DetailsRecipesComponent,
     IngredientComponent,
     FooterComponent,
-    ListeIngredientsComponent
+    ListeIngredientsComponent,
+    GrdFilterPipe
     ],
   imports: [
     BrowserModule,

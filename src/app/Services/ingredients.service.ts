@@ -86,17 +86,18 @@ export class IngredientsService {
 
   ];
   detailsR: Recipes[] = [
-    { name: 'moussaka', image: '../../../assets/img/moussaka.jpg', text: '111?VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/moussaka'},
     // tslint:disable-next-line:max-line-length
-    { name: 'Tarte aux citrons meringué', image: '../../../assets/img/tarte-au-citron.jpg', text: '?2222VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Tarte aux citrons meringué' },
+    { name: 'moussaka', image: '../../../assets/img/moussaka.jpg', text: '111?VKD?LGORJGOERJGORJOIjodjof', rooting: '/detailsrecipes/moussaka'},
     // tslint:disable-next-line:max-line-length
-    { name: 'Risotto aux asperges', image: '../../../assets/img/risotto-asperges.jpg', text: '3333VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Risotto aux asperges' },
+    { name: 'Tarte aux citrons meringué', image: '../../../assets/img/tarte-au-citron.jpg', text: '?2222VKD?LGORJGOERJGORJOIjodjof', rooting: '/detailsrecipes/Tarte' },
     // tslint:disable-next-line:max-line-length
-    { name: 'Salde tomate mozzarell', image: '../../../assets/img/salade-tomate-mozzarella.jpeg', text: '444?VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Salde tomate mozzarell' },
+    { name: 'Risotto aux asperges', image: '../../../assets/img/risotto-asperges.jpg', text: '3333VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Risotto' },
+    // tslint:disable-next-line:max-line-length
+    { name: 'Salde tomate mozzarell', image: '../../../assets/img/salade-tomate-mozzarella.jpeg', text: '444?VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Salde' },
     // tslint:disable-next-line:max-line-length
     { name: 'Tartiflette', image: '../../../assets/img/tartiflette.jpg', text: '555?VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Tartiflette' },
     // tslint:disable-next-line:max-line-length
-    { name: 'Velouté aux pitimaton et patates douce', image: '../../../assets/img/velouter-potimaron-patate-douce.jpg', text: '666?VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Velouté aux pitimaton et patates douce' },
+    { name: 'Velouté aux pitimaton et patates douce', image: '../../../assets/img/velouter-potimaron-patate-douce.jpg', text: '666?VKD?LGORJGOERJGORJOIjodjof', rooting: '/recettes/Veloute' },
   ];
 
 
@@ -106,7 +107,6 @@ export class IngredientsService {
   }
   getList(type: String) {
     return this.ingredients.filter(ingredient => ingredient.type === type);
-  // of(IngredientsService.find(ingredient => ingredient.type === type));
   }
   getInfo(): Observable<ingredientsType[]> {
     return Observable.of(this.info);
@@ -114,8 +114,9 @@ export class IngredientsService {
   getDetailsR(): Observable<Recipes[]> {
     return Observable.of(this.detailsR);
   }
- /*  getRecette(type: String) {
-    return this.Recipes.filter(Recipes => recipes.rooting === rooting);
+  /* getRecette(name: String) {
+    return this.detailsR.filter(recette => recette.name === name);
   } */
+
 }
 

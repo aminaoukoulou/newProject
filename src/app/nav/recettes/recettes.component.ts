@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IngredientsService } from 'src/app/Services/ingredients.service';
 import { Recipes } from 'src/app/Ingredient';
-
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-recettes',
@@ -10,7 +10,10 @@ import { Recipes } from 'src/app/Ingredient';
 })
 export class RecettesComponent implements OnInit {
   detailsR: Recipes[];
-  constructor(private ingredientService: IngredientsService) {  }
+  Recipes: string;
+  public searchText: string;
+
+  constructor(private ingredientService: IngredientsService, private activatedRoute: ActivatedRoute, private router: Router) {  }
 
  getDetailsR() {
    this.ingredientService.getDetailsR().subscribe((detailsR: Recipes[]) => this.detailsR = detailsR);
@@ -18,5 +21,10 @@ export class RecettesComponent implements OnInit {
 
   ngOnInit() {
    this.getDetailsR();
+  }
+ SelectRecipe() {
+const name = this.router.snapshot.paramMap.get('name');
+   this.router.navigate(['/detailsrecipes/', name] );
  }
 }
+
