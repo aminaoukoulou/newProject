@@ -24,7 +24,7 @@ color: rgb(104, 104, 73);
 
 #myInput {
   background-position: 10px 12px;
-  width: 84%;
+  width: 55%;
   margin-left: 20%;
   font-size: 16px;
   padding: 12px 20px 12px 40px;
@@ -35,7 +35,7 @@ color: rgb(104, 104, 73);
 }
 
 .images {
-margin-left: 21vw;
+margin-left: 10vw;
 }
 
 div.gallery {

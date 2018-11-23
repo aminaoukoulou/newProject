@@ -11,8 +11,8 @@ body {
 
 img {
 padding: 1%;
-margin-left: -86%;
-margin-top: -3%;
+margin-left: -75%;
+margin-top: -2%;
 z-index: 100000000;
 } 
 
@@ -94,7 +94,7 @@ ul#menu {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background: #bf928c;
+  background:#bf928cbd;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;

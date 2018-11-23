@@ -15,7 +15,12 @@ img{
 }
 .typo {
   text-align: center;
-  font-family: 'Indie Flower',
-  cursive;
+  font-family: 'Indie Flower',cursive;
   margin-top: 8%;
+  margin-left: -17%;
+  margin-right: auto;
+}
+p {
+  margin-right: 18%;
+  margin-left: 18%;
 }
