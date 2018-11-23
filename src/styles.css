@@ -6,4 +6,6 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   background: #faf6ed;
+  width: 104%;
+  overflow-x: hidden;
 }

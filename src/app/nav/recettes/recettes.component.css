@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 100%
+  width: 100px;
 }
 .block {
     /* width: 47%; */
@@ -30,9 +30,13 @@ color: rgb(104, 104, 73);
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 8%;
+  border-radius: 50px;
 
 }
 
+.images {
+margin-left: 21vw;
+}
 
 div.gallery {
   margin: 5px;
