@@ -87,20 +87,20 @@ export class IngredientsService {
   ];
   detailsR: Recipes[] = [
     // tslint:disable-next-line:max-line-length
-    { name: 'moussaka', image: '../../../assets/img/moussaka.jpg', text: '1111111jhvfjhfvhjyfj', rooting: '/detailsrecipes/moussaka'},
+    { name: 'moussaka', image: '../../../assets/img/moussaka.jpg', text: 'recipeMoussaka', rooting: '/detailsrecipes/moussaka'},
     // tslint:disable-next-line:max-line-length
-     { name: 'Tarte', image: '../../../assets/img/tarte-au-citron.jpg', text: '?2222VKD?LGORJGOERJGORJOIjodjof', rooting: '/detailsrecipes/Tarte' },
+     { name: 'Tarte', image: '../../../assets/img/tarte-au-citron.jpg', text: 'recipeTarte', rooting: '/detailsrecipes/Tarte' },
     // tslint:disable-next-line:max-line-length
-    { name: 'Risotto', image: '../../../assets/img/risotto-asperges.jpg', text: '3333VKD?LGORJGOERJGORJOIjodjof', rooting: '/detailsrecipes/Risotto' },
+    { name: 'Risotto', image: '../../../assets/img/risotto-asperges.jpg', text: 'recipeRisoto', rooting: '/detailsrecipes/Risotto' },
     // tslint:disable-next-line:max-line-length
-    { name: 'Salde', image: '../../../assets/img/salade-tomate-mozzarella.jpeg', text: '444?VKD?LGORJGOERJGORJOIjodjof', rooting: '/detailsrecipes/Salde' },
+    { name: 'Salde', image: '../../../assets/img/salade-tomate-mozzarella.jpeg', text: 'recipeSalade', rooting: '/detailsrecipes/Salde' },
     // tslint:disable-next-line:max-line-length
-    { name: 'Tartiflette', image: '../../../assets/img/tartiflette.jpg', text: '555?VKD?LGORJGOERJGORJOIjodjof', rooting: '/detailsrecipes/Tartiflette' },
+    { name: 'Tartiflette', image: '../../../assets/img/tartiflette.jpg', text: 'recipeTartiflette', rooting: '/detailsrecipes/Tartiflette' },
     // tslint:disable-next-line:max-line-length
-    { name: 'Veloute', image: '../../../assets/img/velouter-potimaron-patate-douce.jpg', text: '666?VKD?LGORJGOERJGORJOIjodjof', rooting: '/detailsrecipes/Veloute' },
+    { name: 'Veloute', image: '../../../assets/img/velouter-potimaron-patate-douce.jpg', text: 'recipeVeloute', rooting: '/detailsrecipes/Veloute' },
     {
       // tslint:disable-next-line:max-line-length
-      name: 'roti', image: 'https://cache.marieclaire.fr/data/photo/w1000_c17/cuisine/i13l/cvf151_053.jpg', text: '800 g de foie de veau, 8 petits oignons blancs, 2 bardes de lard, 50 g de lard gras, 2 verres à liqueur de cognac, 40 g de beurre, sel poivre.Essayez d obtenir le foie en un seul morceau chez votre boucher.Introduisez dans ce foie les 50 g de lard gras émincé.Bardez votre foie, ficelez-le comme un rôti.Faites - le cuire dans une casserole contenant le beurre avec les petits oignons.Lorsque la viande est uniformément dorée, versez le cognac et flambez.Salez, poivrez, et laissez cuire à petit feu avec couvercle une vingtaine de minutes.', rooting: '/detailsrecipes/roti'},
+      name: 'roti', image: 'https://cache.marieclaire.fr/data/photo/w1000_c17/cuisine/i13l/cvf151_053.jpg', text: 'recipeRoti', rooting: '/detailsrecipes/roti'},
     ];
 
 

@@ -78,5 +78,24 @@
      "username":"Pseudo",
      "password": "Mot de passe",
      "Sign in": "Sign in",
-     "Enregistrement": "Enregistrement"
+     "Enregistrement": "Enregistrement",
+     "moussaka":"Moussaka",
+     "recipeMoussaka": "Français",
+     "Tarte":"Tarte au citron meringué",
+     "recipeTarte": "Versez ensuite la crème de citron.Montez les 2 blancs d 'oeufs en neige ferme avec une pincée de sel puis ajoutez 90 g de sucre tout en battant. Recouvrez la crème de citron de meringue et enfournez 15 minutes th 5 . Laissez refroidir.",
+     "Risotto":"Rissoto aux aspérges",
+     "recipeRisoto": "Français",
+     "Salde":"Salade de tomate et de mozzarella",
+     "recipeSalade": "Français",
+     "Tartiflette":"Tartiflette",
+     "recipeTartiflette": "Français",
+     "Veloute":"Velouté au potimarron et patate douce",
+     "recipeVeloute": "Français",
+     "roti":"Rôtie de veau",
+     "recipeRoti": "Français"
+
+
+
+
+
 }

@@ -78,5 +78,19 @@
       "username": "Username",
       "password": "Password",
       "Sign in":"Connection",
-      "Enregistrement":"Register"
+      "Enregistrement":"Register",
+      "moussaka": "Moussaka",
+      "recipeMoussaka":"english",
+      "Tarte": "Lemon meringue pie",
+      "recipeTarte": "english",
+      "Risotto": "Rissoto on the aspérges",
+      "recipeRisoto": "english",
+      "Salde": "Tomato and mozzarella salad",
+      "recipeSalade": "english",
+      "Tartiflette": "Tartiflette",
+      "recipeTartiflette": "english",
+      "Veloute": "pumpkin soup and sweet potato",
+      "recipeVeloute": "english",
+      "roti": "Roasted veal",
+      "recipeRoti": "english"
   }
