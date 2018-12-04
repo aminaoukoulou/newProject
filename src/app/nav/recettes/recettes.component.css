@@ -11,7 +11,8 @@ body {
 }
 .block {
     /* width: 47%; */
-    margin: 0% 22% 0% 2%;
+    margin: 0% 22% 0% -1%;
+    /* margin: -3% 10% 0% -9%; */
 }
 
 h1 {
@@ -42,7 +43,7 @@ div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
+  width: 124px;
 }
 
 div.gallery:hover {

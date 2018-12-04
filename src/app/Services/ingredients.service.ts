@@ -100,11 +100,13 @@ export class IngredientsService {
     { name: 'Veloute', image: '../../../assets/img/velouter-potimaron-patate-douce.jpg', text: 'recipeVeloute', rooting: '/detailsrecipes/Veloute' },
     {
       // tslint:disable-next-line:max-line-length
-      name: 'roti', image: 'https://cache.marieclaire.fr/data/photo/w1000_c17/cuisine/i13l/cvf151_053.jpg', text: 'recipeRoti', rooting: '/detailsrecipes/roti'},
+      name: 'roti', image: '../../../assets/img/roti.jpg', text: 'recipeRoti', rooting: '/detailsrecipes/roti'},
     ];
 
 
-  constructor() { }
+  constructor() {
+
+   }
   getAffiche() {
     return this.ingredients;
   }
