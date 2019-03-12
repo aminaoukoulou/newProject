@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ingredientsType, Recipes } from '../Ingredient';
 import 'rxjs/add/observable/of';
+import { HttpClient } from '@angular/common/http';
 
 
 
@@ -86,9 +87,9 @@ export class IngredientsService {
 
   ];
   detailsR: Recipes[] = [
-    // tslint:disable-next-line:max-line-length
+    // // tslint:disable-next-line:max-line-length
     { name: 'moussaka', image: '../../../assets/img/moussaka.jpg', text: 'recipeMoussaka', rooting: '/detailsrecipes/moussaka'},
-    // tslint:disable-next-line:max-line-length
+    // // tslint:disable-next-line:max-line-length
      { name: 'Tarte', image: '../../../assets/img/tarte-au-citron.jpg', text: 'recipeTarte', rooting: '/detailsrecipes/Tarte' },
     // tslint:disable-next-line:max-line-length
     { name: 'Risotto', image: '../../../assets/img/risotto-asperges.jpg', text: 'recipeRisoto', rooting: '/detailsrecipes/Risotto' },
@@ -103,10 +104,15 @@ export class IngredientsService {
       name: 'roti', image: '../../../assets/img/roti.jpg', text: 'recipeRoti', rooting: '/detailsrecipes/roti'},
     ];
 
+  private RecipesUrl = 'http://localhost:7777/getAllRecipes';  // URL to web api
 
-  constructor() {
+  constructor( private http: HttpClient) {}
 
-   }
+  getRecipes(): Observable<Recipes[]> {
+    console.log('hello');
+    return this.http.get<Recipes[]>(this.RecipesUrl);
+  }
+
   getAffiche() {
     return this.ingredients;
   }
@@ -125,8 +131,12 @@ export class IngredientsService {
    } */
 
   getRecettes() {
+    // faire une requette sur la route '/getAllRecipies'
     return Observable.of( this.detailsR);
   }
+
+
+  // Private RecipesUrl = 'localhost:7777/getAllRecipes';
 
 }
 

@@ -9,7 +9,7 @@
 <div class="gallery" *ngFor="let r of detailsR | grdFilter: {name: searchText, text:searchText}; let i=index;"
   routerLink="{{r.rooting}}">
     <a target="_blank">
-<img src="{{r.image}}" alt="picture" (click)="SelectReceipe()" width="600" height="400">
+<img src="{{r.image}}" alt="picture" (click)="SelectRecipe()" width="600" height="400">
     </a>
     <div class="desc">{{r.name | translate}}</div>
   </div>

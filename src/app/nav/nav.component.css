@@ -124,14 +124,14 @@ li#container{
     width: 14%;
   }
 
-#yo {
+#fr {
 
  background-image: url("../../assets/img/france-flag-round-icon-16.png") ;
 background-size: cover;
   text-decoration: none;
 
 }
-#yooo {
+#en {
  background-image: url("../../assets/img/united-kingdom-flag-round-xs.png");
 background-size: cover;
   text-decoration: none;
