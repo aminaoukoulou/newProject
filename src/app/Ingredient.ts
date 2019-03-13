@@ -18,6 +18,12 @@ export class ingredientsType {
          image: String;
          // ingredientType = categories
        }
+
+export class Category {
+    type_categorie: String;
+    image_categorie: String;
+}
+
 export class Recipes {
     name: String;
     image: String;

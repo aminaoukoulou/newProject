@@ -3,6 +3,21 @@
 <h1> {{"Choisie ton type d'ingredients" | translate}} </h1>
 <div id="background">
 
+
+<div id="gallery" *ngFor="let cat of categories; index as i">
+
+<figure class="pic{{i+1}}">
+<a routerLink="/ingredient/{{cat.type_categorie | titlecase}}">
+    <img src=" {{cat.image_categorie}}">
+
+ 
+    <figcaption> {{cat.type_categorie | translate}}</figcaption>
+
+    </a>
+  </figure>
+
+</div>
+<!--
 <div id="gallery" *ngFor="let type of info">
 
     <figure class=" {{type.figure}}">
@@ -17,6 +32,6 @@
     </figure>
 
   </div>
-
+-->
 </div>
 <app-footer></app-footer>

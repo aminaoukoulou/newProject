@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ingredient, ingredientsType } from '../../Ingredient';
+import { ingredient, ingredientsType, Category } from '../../Ingredient';
 import { IngredientsService } from 'src/app/Services/ingredients.service';
 
 
@@ -17,7 +17,7 @@ export class CategoriesComponent implements OnInit {
   // tslint:disable-next-line:member-ordering
   selectedIngredient: ingredient;
   info: ingredientsType[];
-
+  categories: Category[];
   onSelect(Ingredient: ingredient): void {
     this.selectedIngredient = Ingredient;
   }
@@ -29,6 +29,7 @@ export class CategoriesComponent implements OnInit {
 
   getInfo() {
     this.ingredientService.getInfo().subscribe((info: ingredientsType[]) => this.info = info);
+    this.ingredientService.getCategories().subscribe((categories: Category[]) => this.categories = categories);
   }
   ngOnInit() {
     this.getInfo();

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ingredientsType, Recipes } from '../Ingredient';
+import { ingredientsType, Recipes, Category } from '../Ingredient';
 import 'rxjs/add/observable/of';
 import { HttpClient } from '@angular/common/http';
 
@@ -106,11 +106,17 @@ export class IngredientsService {
 
   private RecipesUrl = 'http://localhost:7777/getAllRecipes';  // URL to web api
 
+  private CategorieUrl = 'http://localhost:7777/getAllCategories';  // URL to web api
+
   constructor( private http: HttpClient) {}
 
   getRecipes(): Observable<Recipes[]> {
     console.log('hello');
     return this.http.get<Recipes[]>(this.RecipesUrl);
+  }
+
+  getCategories(): Observable<Category[]> {
+    return this.http.get<Category[]>(this.CategorieUrl);
   }
 
   getAffiche() {
