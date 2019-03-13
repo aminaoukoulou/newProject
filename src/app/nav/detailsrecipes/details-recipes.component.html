@@ -1,10 +1,10 @@
 <app-nav></app-nav>
 
-<div class="clobal" *ngFor="let r of detailsR">
+<div class="clobal" *ngFor="let r of recettes">
 <div class="typo" >
-<h1> {{r.name |translate}}</h1>
-  <img src="{{r.image}}" alt="">
-<p> {{r.text |translate}}</p>
+<h1> {{r.name_recette |translate}}</h1>
+  <img src="{{r.image_recette}}" alt="">
+<p> {{r.description_recette |translate}}</p>
 </div>
 </div>
 

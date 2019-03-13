@@ -24,10 +24,23 @@ export class Category {
     image_categorie: String;
 }
 
+export class Ingredient {
+  name_ingredient: String;
+  image_ingredient: String;
+  type_categorie: String;
+}
+
 export class Recipes {
     name: String;
     image: String;
     text: String;
     rooting: String;
     // crée une classe recipe a part
+}
+
+export class Recette {
+  name_recette: String;
+  image_recette: String;
+  description_recette: String;
+
 }

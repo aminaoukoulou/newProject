@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IngredientsService } from 'src/app/Services/ingredients.service';
-import { Recipes } from 'src/app/Ingredient';
+import { Recipes, Recette } from 'src/app/Ingredient';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -11,11 +11,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class RecettesComponent implements OnInit {
   detailsR: Recipes[];
   Recipes: string;
-
+  recettes: Recette[];
   constructor(private ingredientService: IngredientsService, private activatedRoute: ActivatedRoute, private router: Router) {  }
 
   getDetailsR() {
-    this.ingredientService.getRecettes().subscribe((detailsR: Recipes[]) => this.detailsR = detailsR);
+    this.ingredientService
+      .getRecettes()
+      .subscribe((recettes: Recette[]) => (this.recettes = recettes));
+   // this.ingredientService.getRecettes().subscribe((detailsR: Recipes[]) => this.detailsR = detailsR);
  }
 
 

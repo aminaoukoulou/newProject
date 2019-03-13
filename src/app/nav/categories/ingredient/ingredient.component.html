@@ -6,17 +6,16 @@
 
   <button class="retour" (click)="goBack()">retour</button>
 
-  <div id="gallery" *ngFor="let ingre of ingredient">
+<div id="gallery" *ngFor="let ingre of ingredient; index as i">
 
-
-<figure class=" {{ingre.figure}}">
+<figure class="pic{{i+1}}">
 
 
       <button class="button" (click)="Onclick(Ingredient)">
-        <img src="{{ingre.image}}">
+      <img src="{{ingre.image_ingredient}}">
       </button>
 
-      <figcaption> {{ingre.name | translate}}</figcaption>
+      <figcaption> {{ingre.name_ingredient | translate}}</figcaption>
 
 
 

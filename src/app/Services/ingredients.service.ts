@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ingredientsType, Recipes, Category } from '../Ingredient';
+import { ingredientsType, Recipes, Category, Ingredient, Recette } from '../Ingredient';
 import 'rxjs/add/observable/of';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 
 
 
@@ -86,6 +86,7 @@ export class IngredientsService {
      { nom: 'boissons', rooting: '/ingredient/Boissons', figure: 'pic14', image: '../../../assets/img/boissssssons.jpg' },
 
   ];
+  
   detailsR: Recipes[] = [
     // // tslint:disable-next-line:max-line-length
     { name: 'moussaka', image: '../../../assets/img/moussaka.jpg', text: 'recipeMoussaka', rooting: '/detailsrecipes/moussaka'},
@@ -103,10 +104,16 @@ export class IngredientsService {
       // tslint:disable-next-line:max-line-length
       name: 'roti', image: '../../../assets/img/roti.jpg', text: 'recipeRoti', rooting: '/detailsrecipes/roti'},
     ];
-
-  private RecipesUrl = 'http://localhost:7777/getAllRecipes';  // URL to web api
+  private RecipesUrl = 'http://localhost:7777/getAllRecettes';  // URL to web api
 
   private CategorieUrl = 'http://localhost:7777/getAllCategories';  // URL to web api
+
+
+  private IngredientUrl = 'http://localhost:7777/getIngredientsByType';  // URL to web api
+
+  private RecettetUrl = 'http://localhost:7777/getRecetteByName';  // URL to web api
+
+
 
   constructor( private http: HttpClient) {}
 
@@ -115,9 +122,26 @@ export class IngredientsService {
     return this.http.get<Recipes[]>(this.RecipesUrl);
   }
 
+  getRecettes(): Observable<Recette[]> {
+    return this.http.get<Recette[]>(this.RecipesUrl);
+  }
+
   getCategories(): Observable<Category[]> {
     return this.http.get<Category[]>(this.CategorieUrl);
   }
+
+  getIngredients(type: string): Observable<Ingredient[]> {
+    let params = new HttpParams();
+    params = params.append('type', type);
+    return this.http.get<Ingredient[]>(this.IngredientUrl, { params: params});
+  }
+
+  getRecette(name: string): Observable<Recette[]> {
+    let params = new HttpParams();
+    params = params.append('name', name);
+    return this.http.get<Recette[]>(this.RecettetUrl, { params: params });
+  }
+
 
   getAffiche() {
     return this.ingredients;
@@ -135,11 +159,12 @@ export class IngredientsService {
   /* getRecette(name: String) {
     return this.detailsR.filter(recette => recette.name === name);
    } */
-
+/*
   getRecettes() {
     // faire une requette sur la route '/getAllRecipies'
     return Observable.of( this.detailsR);
   }
+  */
 
 
   // Private RecipesUrl = 'localhost:7777/getAllRecipes';

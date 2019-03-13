@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IngredientsService } from 'src/app/Services/ingredients.service';
 
 import { ActivatedRoute } from '../../../../../node_modules/@angular/router';
-import { ingredient } from 'src/app/Ingredient';
+import { Ingredient } from 'src/app/Ingredient';
 import { Location } from '@angular/common';
 
 
@@ -13,24 +13,25 @@ import { Location } from '@angular/common';
 })
 export class IngredientComponent implements OnInit {
 
-  Ingredient: ingredient;
+  ingredient: Ingredient[];
 
-  click: ingredient;
+  click: Ingredient;
 
 
 
-  ingredient: { id: number; name: string; image: string; type: string; }[];
+ // ingredient: { id: number; name: string; image: string; type: string; }[];
   ingredientType;
   constructor(private ingredientService: IngredientsService, private activatedRoute: ActivatedRoute, private location: Location) {
   }
   ngOnInit(): void {
     this.ingredientType = this.activatedRoute.snapshot.paramMap.get('type');
-    this.ingredient = this.ingredientService.getList(this.ingredientType);
-
+    this.ingredientService.getIngredients(this.ingredientType).subscribe(
+        (ingredient: Ingredient[]) => (this.ingredient = ingredient)
+      );
   }
 
-  Onclick(Ingredient: ingredient): void {
-    this.click = Ingredient;
+  Onclick(ingredient: Ingredient): void {
+    this.click = ingredient;
     console.log('click');
   }
 
