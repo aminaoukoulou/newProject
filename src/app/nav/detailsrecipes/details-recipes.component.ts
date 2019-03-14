@@ -4,9 +4,9 @@ import { Recipes, Recette } from 'src/app/Ingredient';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: "app-details-recipes",
-  templateUrl: "./details-recipes.component.html",
-  styleUrls: ["./details-recipes.component.css"]
+  selector: 'app-details-recipes',
+  templateUrl: './details-recipes.component.html',
+  styleUrls: ['./details-recipes.component.css']
 })
 export class DetailsRecipesComponent implements OnInit {
   detailsR: Recipes[];

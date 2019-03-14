@@ -10,12 +10,10 @@ import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
   { path: '', component: LoginComponent },
-  {path: 'categories', component: CategoriesComponent},
+  { path: 'categories', component: CategoriesComponent},
   {path: 'recettes', component: RecettesComponent},
   { path: 'detailsrecipes/:name', component: DetailsRecipesComponent},
-  { path: 'ingredient/:type', component: IngredientComponent },
-
-
+  { path: 'ingredient/:type', component: IngredientComponent }
 ];
 @NgModule({
   imports: [

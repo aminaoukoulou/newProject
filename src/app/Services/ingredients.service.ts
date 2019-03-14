@@ -86,7 +86,7 @@ export class IngredientsService {
      { nom: 'boissons', rooting: '/ingredient/Boissons', figure: 'pic14', image: '../../../assets/img/boissssssons.jpg' },
 
   ];
-  
+
   detailsR: Recipes[] = [
     // // tslint:disable-next-line:max-line-length
     { name: 'moussaka', image: '../../../assets/img/moussaka.jpg', text: 'recipeMoussaka', rooting: '/detailsrecipes/moussaka'},

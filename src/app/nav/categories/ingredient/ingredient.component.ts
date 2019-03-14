@@ -17,7 +17,7 @@ export class IngredientComponent implements OnInit {
 
   click: Ingredient;
 
-
+  selected = new Array();
 
  // ingredient: { id: number; name: string; image: string; type: string; }[];
   ingredientType;
@@ -30,9 +30,9 @@ export class IngredientComponent implements OnInit {
       );
   }
 
-  Onclick(ingredient: Ingredient): void {
-    this.click = ingredient;
-    console.log('click');
+  Onclick(name_ingredient: String): void {
+  //  this.click = ingredient;
+    this.selected.push(name_ingredient);
   }
 
   goBack(): void {

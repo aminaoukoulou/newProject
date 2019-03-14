@@ -15,7 +15,7 @@ import {TabViewModule} from 'primeng/primeng';
 import {CodeHighlighterModule} from 'primeng/primeng';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HttpClient, HttpClientModule, HttpClientJsonpModule} from '@angular/common/http';
+import {HttpClient, HttpClientModule, HttpClientJsonpModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import {DropdownModule} from 'primeng/dropdown';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ButtonModule} from 'primeng/button';
@@ -26,8 +26,7 @@ import { IngredientComponent } from './nav/categories/ingredient/ingredient.comp
 import { FooterComponent } from './footer/footer.component';
 import { ListeIngredientsComponent } from './nav/categories/ingredient/liste-ingredients/liste-ingredients.component';
 import { GrdFilterPipe } from './grd-filter.pipe';
-
-
+import { AuthenticationService } from './Services/authentication.service';
 
 
 @NgModule({
@@ -67,7 +66,7 @@ import { GrdFilterPipe } from './grd-filter.pipe';
     DropdownModule,
     HttpClientModule
       ],
-  providers: [IngredientsService],
+  providers: [IngredientsService, AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
